@@ -13,10 +13,10 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       
     - name: Set up JDK 17
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
@@ -24,49 +24,25 @@ jobs:
         
     - name: Grant execute permission to gradlew
       run: chmod +x gradlew
-    
-    - name: Check build files
-      run: |
-        ls -la gradlew
-        ls -la build.gradle.kts
-        ls -la app/
-        java -version
-        
+      
     - name: Build APK (Debug)
-      run: ./gradlew assembleDebug --stacktrace
+      run: ./gradlew assembleDebug --no-daemon
       
     - name: Build AAB (Release)
-      run: ./gradlew bundleRelease --stacktrace
+      run: ./gradlew bundleRelease --no-daemon
       
     - name: Upload Debug APK
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: success()
       with:
-        name: app-debug.apk
+        name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
         retention-days: 30
         
     - name: Upload Release AAB
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: success()
       with:
-        name: app-release.aab
+        name: app-release
         path: app/build/outputs/bundle/release/app-release.aab
         retention-days: 30
-        
-    - name: Upload Build Reports
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: build-reports
-        path: app/build/reports/
-        retention-days: 30
-
-  # قسم اختياري: إرسال بريد عند النجاح
-  notify:
-    needs: build
-    runs-on: ubuntu-latest
-    if: success()
-    steps:
-    - name: Build successful ✓
-      run: echo "Build completed successfully! APK and AAB are ready!"
