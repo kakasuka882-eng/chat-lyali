@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Golden & Light Blue Theme -->
+    <color name="primary">#DAA520</color>
+    <color name="primary_variant">#B8860B</color>
+    <color name="secondary">#87CEEB</color>
+    <color name="secondary_variant">#87CEEB</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#87CEEB</color>
+    <color name="surface">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    
+    <!-- System Colors -->
+    <color name="error">#B00020</color>
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+</resources>

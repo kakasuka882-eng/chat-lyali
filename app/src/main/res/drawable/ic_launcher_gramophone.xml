@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+    
+    <!-- Light Blue Background with rounded corners -->
+    <path
+        android:pathData="M20,20 L172,20 Q192,20 192,40 L192,152 Q192,172 172,172 L20,172 Q0,172 0,152 L0,40 Q0,20 20,20 Z"
+        android:fillColor="#87CEEB" />
+    
+    <!-- Gramophone Horn - Golden Color -->
+    <g>
+        <!-- Gramophone base -->
+        <path
+            android:pathData="M60,130 L60,140 L132,140 L132,130 Z"
+            android:fillColor="#DAA520" />
+        
+        <!-- Gramophone turntable -->
+        <circle
+            android:cx="96"
+            android:cy="125"
+            android:r="20"
+            android:fillColor="#B8860B" />
+        
+        <!-- Gramophone horn curve -->
+        <path
+            android:pathData="M96,70 Q80,55 70,40 Q65,35 75,30 Q90,50 110,65 Q115,70 110,75 Q105,72 96,70 Z"
+            android:fillColor="#DAA520" />
+        
+        <!-- Gramophone horn decorative lines -->
+        <path
+            android:pathData="M78,45 Q85,52 92,58"
+            android:strokeColor="#B8860B"
+            android:strokeWidth="2"
+            android:fillColor="none"
+            android:strokeLineCap="round" />
+        
+        <path
+            android:pathData="M82,40 Q90,48 98,55"
+            android:strokeColor="#B8860B"
+            android:strokeWidth="2"
+            android:fillColor="none"
+            android:strokeLineCap="round" />
+        
+        <path
+            android:pathData="M86,36 Q95,44 103,52"
+            android:strokeColor="#B8860B"
+            android:strokeWidth="2"
+            android:fillColor="none"
+            android:strokeLineCap="round" />
+    </g>
+    
+    <!-- Music Notes - Golden -->
+    <g android:fillColor="#DAA520">
+        <!-- First note -->
+        <circle cx="125" cy="35" r="4" />
+        <path
+            android:pathData="M129,35 L129,25"
+            android:strokeColor="#DAA520"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round" />
+        
+        <!-- Second note -->
+        <circle cx="140" cy="40" r="4" />
+        <path
+            android:pathData="M144,40 L144,30"
+            android:strokeColor="#DAA520"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round" />
+        
+        <!-- Third note -->
+        <circle cx="155" cy="35" r="4" />
+        <path
+            android:pathData="M159,35 L159,22"
+            android:strokeColor="#DAA520"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round" />
+        
+        <!-- Fourth note -->
+        <circle cx="145" cy="55" r="4" />
+        <path
+            android:pathData="M149,55 L149,42"
+            android:strokeColor="#DAA520"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round" />
+        
+        <!-- Connecting note bar -->
+        <path
+            android:pathData="M129,22 L149,20"
+            android:strokeColor="#DAA520"
+            android:strokeWidth="2"
+            android:strokeLineCap="round" />
+    </g>
+    
+    <!-- Arabic Text "شات ليالى زمان" -->
+    <!-- This will be rendered as a text layer in the app -->
+    <!-- For simplicity, we'll just add decorative Arabic text styling -->
+    <path
+        android:pathData="M50,165 L142,165"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+    
+</vector>

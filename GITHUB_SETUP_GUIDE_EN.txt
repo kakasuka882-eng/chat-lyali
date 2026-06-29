@@ -1,0 +1,232 @@
+═══════════════════════════════════════════════════════════════
+📤 GITHUB SETUP GUIDE - English Version
+═══════════════════════════════════════════════════════════════
+
+✨ The fastest way to build the app in 5-10 minutes!
+
+═══════════════════════════════════════════════════════════════
+Step 1: Create GitHub Account (if you don't have one)
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://github.com
+2. Click "Sign up"
+3. Follow the steps (email, password, etc)
+4. Verify your email
+5. Complete setup
+
+═══════════════════════════════════════════════════════════════
+Step 2: Create a New Repository
+═══════════════════════════════════════════════════════════════
+
+After logging in:
+
+1. Click the "+" icon in the top right
+2. Select "New repository"
+3. Fill in the details:
+   - Repository name: ChatLiyaliZaman
+   - Description: A beautiful Android WebView app
+   - Visibility: Public (or Private if you prefer)
+   - ✓ Initialize with: README.md
+4. Click "Create repository"
+
+═══════════════════════════════════════════════════════════════
+Step 3: Install Git on Your Machine
+═══════════════════════════════════════════════════════════════
+
+Press Windows + R and type:
+powershell
+
+Then type:
+git --version
+
+If you see a version number = Git is already installed ✓
+
+If nothing appears:
+1. Download from: https://git-scm.com/download/win
+2. Install with default settings
+
+═══════════════════════════════════════════════════════════════
+Step 4: Configure Git on Your Machine
+═══════════════════════════════════════════════════════════════
+
+Open PowerShell and type:
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@gmail.com"
+
+Example:
+git config --global user.name "Ahmed"
+git config --global user.email "ahmed@gmail.com"
+
+═══════════════════════════════════════════════════════════════
+Step 5: Upload Project to GitHub
+═══════════════════════════════════════════════════════════════
+
+In PowerShell, go to your project folder:
+
+cd "C:\Users\LENOVO\Desktop\lyali\ChatLiyaliZaman"
+
+Then type the following commands one by one:
+
+# Initialize Git
+git init
+
+# Add all files
+git add .
+
+# Create first commit
+git commit -m "Initial commit: Chat Liyali Zaman app with beautiful design"
+
+# Add the remote (replace YOUR-USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR-USERNAME/ChatLiyaliZaman.git
+
+# Upload to GitHub (first time)
+git branch -M main
+git push -u origin main
+
+⚠️ Note: It may ask for password or Personal Access Token
+- If it fails: go to https://github.com/settings/tokens
+- Create a new Personal Access Token
+- Use it as the password when prompted
+
+═══════════════════════════════════════════════════════════════
+Step 6: Enable GitHub Actions
+═══════════════════════════════════════════════════════════════
+
+After uploading to GitHub:
+
+1. Go to: https://github.com/YOUR-USERNAME/ChatLiyaliZaman
+2. Click on the "Actions" tab
+3. Click "I understand my workflows, go ahead and enable them"
+4. Relax and enjoy! 🍿
+
+═══════════════════════════════════════════════════════════════
+Step 7: Wait for the Build
+═══════════════════════════════════════════════════════════════
+
+After uploading:
+
+1. Go to: https://github.com/YOUR-USERNAME/ChatLiyaliZaman
+2. Click "Actions"
+3. You'll see "Build Chat Liyali Zaman App" running
+4. Wait for it to complete (5-10 minutes) ✓
+
+═══════════════════════════════════════════════════════════════
+Step 8: Download the Built Files
+═══════════════════════════════════════════════════════════════
+
+After the build completes:
+
+1. Open the latest Workflow Run
+2. Click "Artifacts" at the bottom
+3. You'll find:
+   - app-debug.apk (for testing)
+   - app-release.aab (for publishing to Google Play)
+   - build-reports (error reports if any)
+
+Click the file name to download 📥
+
+═══════════════════════════════════════════════════════════════
+How to Use app-release.aab
+═══════════════════════════════════════════════════════════════
+
+AAB file is Google's new format:
+
+✓ Use it directly in Google Play Console
+✓ No need to convert to APK
+✓ Google Play converts automatically for each device
+✓ Gives smaller file sizes to users
+
+Publishing Steps:
+
+1. Go to: https://play.google.com/console
+2. Create a developer account ($30 one-time fee)
+3. Create a new app
+4. Click "Release" > "Production"
+5. Click "Create release"
+6. Upload the app-release.aab file
+7. Fill in the details and images
+8. Click "Review release"
+9. Click "Rollout to production"
+
+═══════════════════════════════════════════════════════════════
+Troubleshooting
+═══════════════════════════════════════════════════════════════
+
+❌ Error: git not recognized
+✅ Solution: Reinstall Git from https://git-scm.com
+
+❌ Error: permission denied
+✅ Solution: Use Personal Access Token instead of password
+  Go to: https://github.com/settings/tokens
+
+❌ Build failed in GitHub Actions
+✅ Solution: Click on the Workflow Run and check the errors
+  Usually gradle or AndroidManifest issues
+
+❌ Don't see files after build
+✅ Solution: Make sure the build is green (successful)
+  Wait a minute and refresh
+
+═══════════════════════════════════════════════════════════════
+Tips and Tricks
+═══════════════════════════════════════════════════════════════
+
+💡 When updating:
+
+After making local changes:
+
+git add .
+git commit -m "Describe your changes"
+git push
+
+GitHub Actions will build automatically!
+
+💡 View Build History:
+
+Go to Actions to see all build attempts
+
+💡 Add Status Badge:
+
+In README.md add:
+
+[![Build Status](https://github.com/YOUR-USERNAME/ChatLiyaliZaman/workflows/Build/badge.svg)](https://github.com/YOUR-USERNAME/ChatLiyaliZaman/actions)
+
+═══════════════════════════════════════════════════════════════
+Complete Commands Summary
+═══════════════════════════════════════════════════════════════
+
+# 1. Go to project folder
+cd "C:\Users\LENOVO\Desktop\lyali\ChatLiyaliZaman"
+
+# 2. Initialize git
+git init
+
+# 3. Add all files
+git add .
+
+# 4. First commit
+git commit -m "Initial commit: Chat Liyali Zaman app"
+
+# 5. Add GitHub repository (replace YOUR-USERNAME)
+git remote add origin https://github.com/YOUR-USERNAME/ChatLiyaliZaman.git
+
+# 6. Switch branch
+git branch -M main
+
+# 7. Upload
+git push -u origin main
+
+# Done! ✓
+
+═══════════════════════════════════════════════════════════════
+
+🎉 After that:
+
+✓ Files uploaded to GitHub
+✓ GitHub Actions will build the app automatically
+✓ You'll get APK and AAB in 5-10 minutes
+✓ Download the ready files
+✓ Ready to publish on Google Play! 🚀
+
+═══════════════════════════════════════════════════════════════

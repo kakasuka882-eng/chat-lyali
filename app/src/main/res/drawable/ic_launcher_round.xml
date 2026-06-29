@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+    
+    <!-- Light Blue Rounded Background -->
+    <path
+        android:pathData="M20,20 L172,20 Q192,20 192,40 L192,152 Q192,172 172,172 L20,172 Q0,172 0,152 L0,40 Q0,20 20,20 Z"
+        android:fillColor="#87CEEB" />
+    
+    <!-- Outer Golden Border (rounded) -->
+    <path
+        android:pathData="M18,18 L174,18 Q188,18 188,32 L188,160 Q188,174 174,174 L18,174 Q4,174 4,160 L4,32 Q4,18 18,18 Z"
+        android:fillColor="none"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="2.5" />
+    
+    <!-- Gramophone Horn - Artistic petals -->
+    <path
+        android:pathData="M70,55 Q60,50 52,42 Q48,38 58,33 Q80,60 105,75"
+        android:fillColor="#DAA520" />
+    
+    <path
+        android:pathData="M68,50 Q63,48 58,45"
+        android:fillColor="none"
+        android:strokeColor="#B8860B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    
+    <path
+        android:pathData="M75,48 Q72,50 68,55"
+        android:fillColor="none"
+        android:strokeColor="#B8860B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    
+    <path
+        android:pathData="M82,48 Q82,52 80,60"
+        android:fillColor="none"
+        android:strokeColor="#B8860B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    
+    <path
+        android:pathData="M90,48 Q95,53 100,60"
+        android:fillColor="none"
+        android:strokeColor="#B8860B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    
+    <!-- Gramophone Base -->
+    <rect
+        android:x="72"
+        android:y="95"
+        android:width="48"
+        android:height="6"
+        android:rx="2"
+        android:fillColor="#B8860B" />
+    
+    <!-- Gramophone Turntable -->
+    <circle
+        android:cx="96"
+        android:cy="105"
+        android:r="14"
+        android:fillColor="#DAA520" />
+    
+    <circle
+        android:cx="96"
+        android:cy="105"
+        android:r="10"
+        android:fillColor="#B8860B" />
+    
+    <circle
+        android:cx="96"
+        android:cy="105"
+        android:r="4"
+        android:fillColor="#DAA520" />
+    
+    <!-- Music Notes with connecting line -->
+    <!-- Note 1 -->
+    <circle
+        android:cx="118"
+        android:cy="32"
+        android:r="3.5"
+        android:fillColor="#DAA520" />
+    <path
+        android:pathData="M121.5,32 L121.5,20"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="none" />
+    
+    <!-- Note 2 -->
+    <circle
+        android:cx="136"
+        android:cy="38"
+        android:r="3.5"
+        android:fillColor="#DAA520" />
+    <path
+        android:pathData="M139.5,38 L139.5,24"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="none" />
+    
+    <!-- Note 3 -->
+    <circle
+        android:cx="153"
+        android:cy="32"
+        android:r="3.5"
+        android:fillColor="#DAA520" />
+    <path
+        android:pathData="M156.5,32 L156.5,16"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="none" />
+    
+    <!-- Note 4 -->
+    <circle
+        android:cx="143"
+        android:cy="50"
+        android:r="3.5"
+        android:fillColor="#DAA520" />
+    <path
+        android:pathData="M146.5,50 L146.5,36"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="none" />
+    
+    <!-- Connecting musical line -->
+    <path
+        android:pathData="M121.5,18 Q135,16 155,14"
+        android:strokeColor="#DAA520"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:fillColor="none" />
+    
+</vector>

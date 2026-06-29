@@ -1,0 +1,30 @@
+This is a Chat Liyali Zaman Android Application
+
+## Main Features:
+- WebView-based chat application
+- Loads https://www.chatliyily.com/
+- Modern Material Design UI
+- High performance optimization
+- Ready for Google Play Store
+
+## Files Structure:
+- app/src/main/java/ - Source code
+- app/src/main/res/ - Resources (layouts, drawables, values)
+- app/build.gradle.kts - Build configuration
+- AndroidManifest.xml - App manifest
+
+## Build Instructions:
+1. Open in Android Studio
+2. Sync Gradle files
+3. Run Shift+F10 to test
+4. For release build: gradlew bundleRelease
+
+## Output:
+- Debug APK: app/build/outputs/apk/debug/
+- Release AAB: app/build/outputs/bundle/release/app-release.aab
+
+Version: 1.0.0
+Target SDK: 34 (Android 14+)
+Min SDK: 24 (Android 7.0+)
+
+App is ready to be uploaded to Google Play Console!

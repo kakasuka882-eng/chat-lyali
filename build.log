@@ -1,0 +1,16 @@
+Initialized native services in: C:\Users\LENOVO\.gradle\native
+Initialized jansi services in: C:\Users\LENOVO\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot, JAVA_VERSION=17.0.17, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.17+10, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.17+10, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Checking if the launcher JVM can be re-used for build. To be re-used, the launcher JVM needs to match the parameters required for the build process: --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx2048m -Dfile.encoding=windows-1252 -Duser.country=SA -Duser.language=ar -Duser.variant
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/8.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Starting process 'Gradle build daemon'. Working directory: C:\Users\LENOVO\.gradle\daemon\8.1 Command: C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin\java.exe --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx2048m -Dfile.encoding=windows-1252 -Duser.country=SA -Duser.language=ar -Duser.variant -cp C:\Users\LENOVO\.gradle\wrapper\dists\gradle-8.1-bin\2eyty4r6kz6fpakefpk52nbbm\gradle-8.1\lib\gradle-launcher-8.1.jar -javaagent:C:\Users\LENOVO\.gradle\wrapper\dists\gradle-8.1-bin\2eyty4r6kz6fpakefpk52nbbm\gradle-8.1\lib\agents\gradle-instrumentation-agent-8.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.1
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 25.109 secs.
+The client will now receive all logging from the daemon (pid: 68656). The daemon log file: C:\Users\LENOVO\.gradle\daemon\8.1\daemon-68656.out.log
+Daemon will be stopped at the end of the build 
+Using 4 worker leases.
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot, JAVA_VERSION=17.0.17, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.17+10, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.17+10, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\Users\LENOVO\Desktop\lyali\ChatLiyaliZaman] as hierarchies to watch
+File system watching is active
+^C
